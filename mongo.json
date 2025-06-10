@@ -1,0 +1,12 @@
+db
+db.createcollection('users1')
+use users1
+db.users1.insert({name:'reza6', age:36,salary:50000})
+db.users1.insert({name:'rez4a', age:16,salary:50000})
+db.users1.insert({name:'reza1', age:56,salary:50000})
+db.users1.insert({name:'reza2', age:46,salary:50000})
+db.users1.find({})
+db.users1.fing({}).pretty()
+db.users1.remove({name:'reza6'})
+db.users1.update({name:'reza1'},{$set:{age:20}})
+select isjson(@json_data)
